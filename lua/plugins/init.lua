@@ -10,16 +10,16 @@ return {
   -- FZF(模块搜索查找)
   require('plugins.fzf-lua'),
 
-  -- LSP
-  require('plugins.lsp'),
+  -- LSP (not use)
+  --require('plugins.lsp'),
 
   -- Treesitter (语法高亮)
   require('plugins.treesitter'),
 
-  -- Oscyank(共享剪切板)
-  require('plugins.nvim-osc52'),
-
   -- treesitter_context(top 位置显示类)
   require('plugins.treesitter_context'),
+
+  -- vim-oscyank（共享剪切板）
+  require('plugins.vim-oscyank'),
 
 }
