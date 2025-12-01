@@ -50,15 +50,15 @@ return {
     -- =======================================================
     -- 4. 快捷键映射 (你要求的配置)
     -- =======================================================
-    local map = vim.keymap.set
-    local opts = { noremap = true, silent = true }
+    --local map = vim.keymap.set
+    --local opts = { noremap = true, silent = true }
 
     -- 视觉模式选中后，按 y 复制到系统剪贴板 (触发上面的 TextYankPost)
-    map('v', 'y', '"+y', { desc = '复制到系统剪贴板 (Window/Tabby)', unpack(opts) })
+    --map('v', 'y', '"+y', { desc = '复制到系统剪贴板 (Window/Tabby)', unpack(opts) })
 
     -- 正常模式下，按 p 从系统剪贴板粘贴 (实际上是粘贴 nvim 寄存器内容)
     -- 注意：要在 Tabby 里把 Windows 的内容粘贴进 Nvim，
     -- 建议直接使用 Tabby 的快捷键 (通常是 Ctrl+Shift+V 或 鼠标右键)
-    map('n', 'p', '"+p', { desc = '从系统剪贴板粘贴', unpack(opts) })
+    --map('n', 'p', '"+p', { desc = '从系统剪贴板粘贴', unpack(opts) })
   end,
 }
