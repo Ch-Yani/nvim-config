@@ -22,4 +22,7 @@ return {
   -- vim-oscyank（共享剪切板）
   require('plugins.vim-oscyank'),
 
+  -- opencode (AI Assistant)
+  require('plugins.opencode'),
+
 }
